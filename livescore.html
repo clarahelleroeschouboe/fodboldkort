@@ -9,9 +9,18 @@
   <title>Document</title>
 </head>
 <body>
-<h1 class="overskrift">Livescore</h1>
+    
+    <h1 class="overskrift">Score</h1>
+    <!--her er dataen fra: https://footystats.org/embeds/-->
+    
+ <div id="fs-standings"> <script> (function (w,d,s,o,f,js,fjs) { w['fsStandingsEmbed']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) }; js = d.createElement(s), fjs = d.getElementsByTagName(s)[0]; js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs); }(window, document, 'script', 'mw', 'https://cdn.footystats.org/embeds/standings.js')); mw('params', { leagueID: 2245 }); </script></div>
+    
+ 
+    
+    <div id="fs-upcoming"> <script> (function (w,d,s,o,f,js,fjs) { w['fsUpcomingEmbed']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) }; js = d.createElement(s), fjs = d.getElementsByTagName(s)[0]; js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs); }(window, document, 'script', 'fsUpcoming', 'https://cdn.footystats.org/embeds/upcoming.js')); fsUpcoming('params', { teamID: 2516 }); </script></div>
 
-<img id="livescore" src="images/livescore.png"></img>
+
+   <!--her slutter dataen fra: https://footystats.org/embeds/-->
 
 </body>
 </html>
